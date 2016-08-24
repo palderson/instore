@@ -34,7 +34,7 @@ class Camera extends Component {
             </Header>
             <Content>
                 <View>
-                  
+
                 </View>
             </Content>
           </Container>

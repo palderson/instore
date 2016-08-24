@@ -23,16 +23,16 @@ class SideBar extends Component {
         this.props.closeDrawer();
         this.props.resetRoute(route);
     }
-    
+
     render(){
         return (
             <Container>
                 <Image source={require('../../../images/sid.png')} style={styles.background} >
                     <Content style={Platform.OS === 'android' ? styles.adrawerContent : styles.drawerContent}>
                         <List  foregroundColor={"white"} >
-                            <ListItem button onPress={() => this.navigateTo('home')} iconLeft style={Platform.OS === 'android' ? styles.alinks : styles.links} >
+                            <ListItem button onPress={() => this.navigateTo('camera')} iconLeft style={Platform.OS === 'android' ? styles.alinks : styles.links} >
                                 <Icon name="ios-grid-outline" />
-                                <Text style={styles.linkText} >NEWS</Text>
+                                <Text style={styles.linkText} >CAMERA</Text>
                             </ListItem>
                             <ListItem button onPress={() => this.navigateTo('channels')}  iconLeft style={Platform.OS === 'android' ? styles.alinks : styles.links} >
                                 <Icon name="ios-keypad-outline" />
@@ -67,7 +67,7 @@ class SideBar extends Component {
                                 <Text style={styles.linkText}>FEEDBACK</Text>
                             </ListItem>
                         </List>
-                 
+
                         <View style={styles.logoutContainer}>
                             <View style={styles.logoutbtn}  foregroundColor={"white"}>
                                 <Grid>

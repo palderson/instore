@@ -12,6 +12,7 @@ import Navigator from 'Navigator';
 
 import Login from './components/login/';
 import Home from './components/home/';
+import Camera from './components/camera/';
 import SignUp from './components/sign-up/';
 import Feedback from './components/feedback/';
 import Comments from './components/comments/';
@@ -73,9 +74,9 @@ const reducerCreate = params=>{
 const drawerStyle  = { shadowColor: '#000000', shadowOpacity: 0.8, shadowRadius: 3};
 
 class AppNavigator extends Component {
-    
+
     constructor(props){
-        
+
         super(props);
     }
 
@@ -163,6 +164,8 @@ class AppNavigator extends Component {
                 return <Login navigator={navigator} />;
             case 'home':
                 return <Home navigator={navigator} />;
+            case 'camera':
+                return <Camera navigator={navigator} />;
             case 'feedback':
                 return <Feedback navigator={navigator} />;
             case 'comments':
